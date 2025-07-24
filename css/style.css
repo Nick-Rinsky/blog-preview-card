@@ -22,11 +22,20 @@
     padding: 0;
 }
 
+:root {
+    --yellow: hsl(47 88%, 63%);
+    --gray-950: hsl(0, 0%, 7%);
+    --gray-500: hsl(0, 0%, 42%);
+    --white: hsl(0, 0%, 100%);
+    --figtree: 'Figtree', sans-serif;
+}
+
 body {
-    font-family: "Figtree", sans-serif;
+    font-family: var(--figtree);
     font-optical-sizing: auto;
-    font-weight: auto;
+    /* font-weight: auto; */
     font-style: normal;
+    background-color: var(--yellow);
 }
 
 .attribution { 
