@@ -1,0 +1,29 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f4f8;
+  padding: 20px;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+.card img {
+  width: 100px;
+  margin-bottom: 10px;
+}
