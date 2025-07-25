@@ -1,20 +1,4 @@
-/* @font-face {
-    font-family: 'Figtree', sans-serif;
-    src: url('../assets/fonts/Figtree-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Figtree', sans-serif;
-    src: url('../assets/fonts/Figtree-ExtraBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-} */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Outfit:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Outfit:wght@100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -33,9 +17,31 @@
 body {
     font-family: var(--figtree);
     font-optical-sizing: auto;
-    /* font-weight: auto; */
     font-style: normal;
+    font-display: swap;
     background-color: var(--yellow);
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    padding: 24px;
+    align-items: center; /* позиционирование по центру */
+    justify-content: center;
+}
+
+.card {
+    max-width: 384px;
+    min-width: 327px;
+
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 20px;
+}
+
+.card__blog-img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .attribution { 
