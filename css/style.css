@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -25,8 +25,7 @@ body {
 main {
     display: flex;
     min-height: 100vh;
-    padding: 24px;
-    align-items: center; /* позиционирование по центру */
+    align-items: center;
     justify-content: center;
 }
 
@@ -37,14 +36,81 @@ main {
     background-color: var(--white);
     padding: 24px;
     border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px 0px 0px var(--gray-950);
 }
 
 .card__blog-img {
     width: 100%;
     border-radius: 10px;
+    margin: 0 0 24px 0;
+    display: block;
 }
 
-.attribution { 
+.card__category {
+    font-size: 14px;
+    font-weight: 800;
+
+    padding: 4px 12px;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.card__publish-date {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 12px 0;
+}
+
+.card__title-a {
+    text-decoration: none;
+    color: var(--gray-950);
+    transition: color 0.2s ease;
+}
+
+.card__title-a:hover {
+    color: var(--yellow);
+}
+
+.card__descriptoin {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--gray-500);
+    margin: 12px 0;
+}
+
+.card__author {
+    display: inline-flex;
+    align-items: center;
+}
+
+.card__author-name {
+    margin: 0 0 0 12px;
+}
+
+.card__author-img {
+    width: 32px;
+}
+
+.card__author-name {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+footer {
+    padding: 24px;
+}
+
+.attribution {
     font-size: 11px; 
     text-align: center; 
 }
